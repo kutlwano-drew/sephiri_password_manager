@@ -1,0 +1,50 @@
+name: sephiri_password_manager
+description: "A fully offline, encrypted Flutter password manager."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.11.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+
+  # Database
+  drift: 2.31.0
+  drift_flutter: 0.2.8
+
+  # Cryptography
+  cryptography: ^2.9.0
+
+  # Secure local storage
+  flutter_secure_storage: ^11.2.0
+
+  # File import/export
+  file_picker: ^13.3.3
+
+  # Identifiers
+  uuid: ^4.6.0
+  heroicons: ^0.11.0
+  flutter_social_button: ^1.1.6+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Drift generation
+  drift_dev: 2.31.0
+  build_runner: 2.15.1
+
+  # Pin Analyzer below version 10 to avoid meta conflict
+  analyzer: 9.0.0
+
+  # Linting
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
